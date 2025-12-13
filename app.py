@@ -3,6 +3,30 @@ from datetime import datetime
 import pandas as pd
 import os
 import uuid
+import base64
+
+def get_img_as_base64(file):
+    with open(file, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+img_bg = get_img_as_base64("bg_matcha.jpeg")
+
+page_bg_img = f"""
+<style>
+[data-testid="stAppViewContainer"] {{
+    background-image: url("data:image/jpeg;base64,{img_bg}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}}
+
+[data-testid="stSidebar"] {{
+    background-color: rgba(255, 255, 255, 0.8);
+}}
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # ---------------- CONFIG ----------------
 st.set_page_config(
