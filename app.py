@@ -36,7 +36,6 @@ DELIVERY_FEE = 5
 MENU_ITEMS = {
     "matcha oat milk เย็น 60 บาท": 60,
     "matcha fresh milk เย็น 60 บาท": 60,
-    "clear matcha เย็น 50 บาท": 50,
     "coconut matcha เย็น 60 บาท": 60,
     "ชาไทยเย็น 40 บาท": 40,
     "ชาเขียวเย็น 40 บาท": 40,
