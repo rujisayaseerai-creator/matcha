@@ -364,8 +364,6 @@ else:
 - เมนู: {row['menu']}
 - ความหวาน: {row['sweetness']}
 - โน้ตเพิ่มเติม: {row.get('note', '')}
-- ราคาเครื่องดื่ม: {row.get('price', 0)} บาท
-- ค่าจัดส่ง: {row.get('delivery_fee', 0)} บาท
 - ยอดรวมทั้งหมด: {row.get('total_price', 0)} บาท
 """
                 )
@@ -398,8 +396,6 @@ else:
        เมนู: {row['menu']}<br/>
        ความหวาน: {row['sweetness']}<br/>
        โน้ตเพิ่มเติม: {row.get('note', '')}<br/>
-       ราคาเครื่องดื่ม: {row.get('price', 0)} บาท<br/>
-       ค่าจัดส่ง: {row.get('delivery_fee', 0)} บาท<br/>
        ยอดรวมทั้งหมด: {row.get('total_price', 0)} บาท
     </p>
     <hr/>
