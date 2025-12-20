@@ -7,7 +7,7 @@ import requests  # ใช้สำหรับส่ง LINE Notify (ถ้า�
 
 # ---------------- CONFIG ----------------
 st.set_page_config(
-    page_title="Matcha Cafe Order",
+    page_title="Cafe Order",
     page_icon="🍵",
     layout="centered"
 )
